@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Maps" xmlns:tns="http://www.example.org/Maps" elementFormDefault="qualified">
+
+    <element name="Map" type="string"></element>
+
+    <complexType name="Map">
+    	<sequence>
+    		<element name="id" type="int" minOccurs="1" maxOccurs="1"></element>
+    		<element name="ReceivingApplicationUniversalID"
+    			type="string" minOccurs="1" maxOccurs="1">
+    		</element>
+    		<element name="ReceivingFacilityUniversalIDType" type="string" minOccurs="1" maxOccurs="1"></element>
+    	</sequence>
+    </complexType>
+</schema>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_PnzGAI6mEeivd-zu3wInvA" targetNamespace="http://tns.tibco.com/bw/composite/org.carenet.oasis.rest.oasis_maps.module" name="org.carenet.oasis.rest.oasis_maps.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_QIbt4I6mEeivd-zu3wInvA" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_QIk30I6mEeivd-zu3wInvA" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_QIk30Y6mEeivd-zu3wInvA" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_QIuo0I6mEeivd-zu3wInvA" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_QIuo0Y6mEeivd-zu3wInvA" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_QIuo0o6mEeivd-zu3wInvA" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_QIuo046mEeivd-zu3wInvA" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_QI4Z0I6mEeivd-zu3wInvA" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_QI4Z0Y6mEeivd-zu3wInvA" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_Pw3icI6mEeivd-zu3wInvA" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Pw3icY6mEeivd-zu3wInvA" processName="org.carenet.oasis.rest.oasis_maps.module.Process"/>
+  </sca:component>
+</sca:composite>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jdbc="http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:subject="http://xsd.tns.tibco.com/trinity/models/identity/subject" xmi:id="_8DPRgY62Eeivd-zu3wInvA" name="org.carenet.oasis.rest.oasis_maps.module.oasis_maps" type="jdbc:JdbcDataSource">
+  <jndi:reference xmi:id="_8EbkUI62Eeivd-zu3wInvA" key="subjectJndiName" type="subject:SubjectConfiguration" value=""/>
+  <jndi:configuration xsi:type="jdbc:JdbcDataSource" xmi:id="_8EbkUY62Eeivd-zu3wInvA" username="sa" password="#!vNu11+8dmn7GAq9290IJJ/tQ2xIAHNGRenLPfmUCAZ4=">
+    <connectionConfig xsi:type="jdbc:NonXaConnection" xmi:id="_8EbkUo62Eeivd-zu3wInvA" jdbcDriver="com.microsoft.sqlserver.jdbc.SQLServerDriver" dbURL="jdbc:sqlserver://localhost:2000;databaseName=oasis_maps;"/>
+    <connectionProperties xmi:id="__3BsMI62Eeivd-zu3wInvA" key="jarFile" value="sqljdbc4"/>
+  </jndi:configuration>
+</jndi:namedResource>
