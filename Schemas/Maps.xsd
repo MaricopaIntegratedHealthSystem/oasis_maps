@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Maps" xmlns:tns="http://www.example.org/Maps" elementFormDefault="qualified">
 
-    <element name="Map" type="string"></element>
+    <element name="Map" type="tns:Map"></element>
 
     <complexType name="Map">
     	<sequence>
@@ -9,7 +9,55 @@
     		<element name="ReceivingApplicationUniversalID"
     			type="string" minOccurs="1" maxOccurs="1">
     		</element>
-    		<element name="ReceivingFacilityUniversalIDType" type="string" minOccurs="1" maxOccurs="1"></element>
+    		<element name="ReceivingFacilityUniversalIDType"
+    			type="string" minOccurs="1" maxOccurs="1">
+    		</element>
+    		<element name="ReceivingApplicationUniversalIDType"
+    			type="string" minOccurs="1" maxOccurs="1">
+    		</element>
+    		<element name="SendingFacilityUniversalID" type="string"
+    			minOccurs="1" maxOccurs="1">
+    		</element>
+    		<element name="SendingFacilityUniversalIDType" type="string"
+    			minOccurs="1" maxOccurs="1">
+    		</element>
+    		<element name="ReceivingFacilityUniversalID" type="string"
+    			minOccurs="1" maxOccurs="1">
+    		</element>
+    		<element name="DateTimeofMessage" type="dateTime"
+    			minOccurs="1" maxOccurs="1">
+    		</element>
+    		<element name="MessageTypeTriggerEvent" type="string"
+    			minOccurs="1" maxOccurs="1">
+    		</element>
+    		<element name="MessageTypeMessageCode" type="string"
+    			minOccurs="1" maxOccurs="1">
+    		</element>
+    		<element name="SendingFacilityNamespaceID" type="string"
+    			minOccurs="1" maxOccurs="1">
+    		</element>
+    		<element name="ReceivingFacilityNamespaceID" type="string"
+    			minOccurs="1" maxOccurs="1">
+    		</element>
+    		<element name="MessageHeader" type="string" minOccurs="1"
+    			maxOccurs="1">
+    		</element>
+    		<element name="source_guideline_path" type="string"
+    			minOccurs="1" maxOccurs="1">
+    		</element>
+    		<element name="translate_path" type="string" minOccurs="1"
+    			maxOccurs="1">
+    		</element>
+    		<element name="target_guideline_path" type="string" minOccurs="1" maxOccurs="1"></element>
     	</sequence>
     </complexType>
+
+
+    <complexType name="Maps">
+    	<sequence>
+    		<element ref="tns:Map" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="Maps" type="tns:Maps"></element>
 </schema>
