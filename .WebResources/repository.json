@@ -1,4 +1,11 @@
 {
-    "records": [],
-    "resources": []
+    "records": [{
+        "name": "Cloud",
+        "items": [],
+        "url": "https://integration.cloud.tibco.com:443"
+    }],
+    "resources": [{
+        "location": "Service Descriptors/org.carenet.oasis.rest.oasis_maps.module.getMapsProcess-Maps.json",
+        "type": "generated"
+    }]
 }

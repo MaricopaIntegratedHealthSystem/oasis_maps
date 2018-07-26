@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:source="bw.rest" xmlns:tns="http://xmlns.example.com/Maps/parameters" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://xmlns.example.com/Maps/parameters">
+  <xs:element name="mapsGetParameters">
+    <xs:complexType>
+      <xs:sequence>
+        
+                <xs:element maxOccurs="1" minOccurs="0" name="InfoId" type="xs:string"/>
+                <xs:element maxOccurs="1" minOccurs="0" name="ReceivingApplicationUniversalID" type="xs:string"/>
+                <xs:element maxOccurs="1" minOccurs="0" name="ReceivingFacilityUniversalIDType" type="xs:string"/>
+                <xs:element maxOccurs="1" minOccurs="0" name="ReceivingApplicationUniversalIDType" type="xs:string"/>
+                <xs:element maxOccurs="1" minOccurs="0" name="SendingFacilityUniversalID" type="xs:string"/>
+                <xs:element maxOccurs="1" minOccurs="0" name="SendingFacilityUniversalIDType" type="xs:string"/>
+                <xs:element maxOccurs="1" minOccurs="0" name="ReceivingFacilityUniversalID" type="xs:string"/>
+                <xs:element maxOccurs="1" minOccurs="0" name="MessageTypeTriggerEvent" type="xs:string"/>
+                <xs:element maxOccurs="1" minOccurs="0" name="MessageTypeMessageCode" type="xs:string"/>
+                <xs:element maxOccurs="1" minOccurs="0" name="SendingFacilityNamespaceID" type="xs:string"/>
+                <xs:element maxOccurs="1" minOccurs="0" name="ReceivingFacilityNamespaceID" type="xs:string"/>
+                <xs:element maxOccurs="1" minOccurs="0" name="MessageHeader" type="xs:string"/>
+                <xs:element maxOccurs="1" minOccurs="0" name="MessageTypeMessageStructure" type="xs:string"/>
+                <xs:element maxOccurs="1" minOccurs="0" name="SendingApplicationNamespaceID" type="xs:string"/>
+                <xs:element maxOccurs="1" minOccurs="0" name="ReceivingApplicationNamespaceID" type="xs:string"/>
+                <xs:element maxOccurs="1" minOccurs="0" name="SendingApplicationUniversalID" type="xs:string"/>
+                <xs:element maxOccurs="1" minOccurs="0" name="Version" type="xs:string"/>
+                <xs:element maxOccurs="1" minOccurs="0" name="SendingApplicationUniversalIDType" type="xs:string"/>
+            </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

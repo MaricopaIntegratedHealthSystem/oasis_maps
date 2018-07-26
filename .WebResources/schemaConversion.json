@@ -1,0 +1,5 @@
+{"records": [{
+    "jsonSchemaLocation": "/org.carenet.oasis.rest.oasis_maps.module/Service Descriptors/org.carenet.oasis.rest.oasis_maps.module.getMapsProcess-Maps.json",
+    "conversionType": "linked",
+    "xsdSchemaTargetNamespace": "http://www.example.org/Maps"
+}]}

@@ -1,0 +1,227 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Summary about the new REST service.",
+    "description" : "Summary about the new REST service."
+  },
+  "host" : "localhost:2222",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/maps" : {
+      "get" : {
+        "description" : "",
+        "operationId" : "get-maps",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "name" : "ReceivingFacilityUniversalIDType",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "InfoId",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "SendingFacilityUniversalIDType",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "SendingApplicationUniversalIDType",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "MessageTypeTriggerEvent",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "ReceivingApplicationUniversalID",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "MessageTypeMessageStructure",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "SendingFacilityUniversalID",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "SendingFacilityNamespaceID",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "SendingApplicationUniversalID",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "Version",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "ReceivingFacilityUniversalID",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "SendingApplicationNamespaceID",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "ReceivingFacilityNamespaceID",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "MessageHeader",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "ReceivingApplicationUniversalIDType",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "MessageTypeMessageCode",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "ReceivingApplicationNamespaceID",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a Maps to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/Maps"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Maps" : {
+      "type" : "object",
+      "properties" : {
+        "Map" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Map",
+            "uniqueItems" : false
+          }
+        }
+      }
+    },
+    "Map" : {
+      "type" : "object",
+      "required" : [ "translate_path", "source_guideline_path", "ReceivingFacilityUniversalIDType", "InfoId", "SendingFacilityUniversalIDType", "SendingApplicationUniversalIDType", "MessageTypeTriggerEvent", "ReceivingApplicationUniversalID", "MessageTypeMessageStructure", "SendingFacilityUniversalID", "SendingFacilityNamespaceID", "target_guideline_path", "SendingApplicationUniversalID", "Version", "ReceivingFacilityUniversalID", "DateTimeofMessage", "SendingApplicationNamespaceID", "id", "ReceivingFacilityNamespaceID", "MessageHeader", "ReceivingApplicationUniversalIDType", "MessageTypeMessageCode", "ReceivingApplicationNamespaceID" ],
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "ReceivingApplicationUniversalID" : {
+          "type" : "string"
+        },
+        "ReceivingFacilityUniversalIDType" : {
+          "type" : "string"
+        },
+        "ReceivingApplicationUniversalIDType" : {
+          "type" : "string"
+        },
+        "SendingFacilityUniversalID" : {
+          "type" : "string"
+        },
+        "SendingFacilityUniversalIDType" : {
+          "type" : "string"
+        },
+        "ReceivingFacilityUniversalID" : {
+          "type" : "string"
+        },
+        "DateTimeofMessage" : {
+          "type" : "string"
+        },
+        "MessageTypeTriggerEvent" : {
+          "type" : "string"
+        },
+        "MessageTypeMessageCode" : {
+          "type" : "string"
+        },
+        "SendingFacilityNamespaceID" : {
+          "type" : "string"
+        },
+        "ReceivingFacilityNamespaceID" : {
+          "type" : "string"
+        },
+        "MessageHeader" : {
+          "type" : "string"
+        },
+        "source_guideline_path" : {
+          "type" : "string"
+        },
+        "translate_path" : {
+          "type" : "string"
+        },
+        "target_guideline_path" : {
+          "type" : "string"
+        },
+        "InfoId" : {
+          "type" : "string"
+        },
+        "MessageTypeMessageStructure" : {
+          "type" : "string"
+        },
+        "SendingApplicationNamespaceID" : {
+          "type" : "string"
+        },
+        "ReceivingApplicationNamespaceID" : {
+          "type" : "string"
+        },
+        "SendingApplicationUniversalID" : {
+          "type" : "string"
+        },
+        "Version" : {
+          "type" : "string"
+        },
+        "SendingApplicationUniversalIDType" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

@@ -1,63 +1,90 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Maps" xmlns:tns="http://www.example.org/Maps" elementFormDefault="qualified">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.example.org/Maps" elementFormDefault="qualified" targetNamespace="http://www.example.org/Maps">
 
-    <element name="Map" type="tns:Map"></element>
+    <element name="Map" type="tns:Map"/>
 
     <complexType name="Map">
     	<sequence>
-    		<element name="id" type="int" minOccurs="1" maxOccurs="1"></element>
-    		<element name="ReceivingApplicationUniversalID"
-    			type="string" minOccurs="1" maxOccurs="1">
+    		<element maxOccurs="1" minOccurs="1" name="id"
+    			type="string" />
+    		<element maxOccurs="1" minOccurs="1"
+    			name="ReceivingApplicationUniversalID" type="string">
     		</element>
-    		<element name="ReceivingFacilityUniversalIDType"
-    			type="string" minOccurs="1" maxOccurs="1">
+    		<element maxOccurs="1" minOccurs="1"
+    			name="ReceivingFacilityUniversalIDType" type="string">
     		</element>
-    		<element name="ReceivingApplicationUniversalIDType"
-    			type="string" minOccurs="1" maxOccurs="1">
+    		<element maxOccurs="1" minOccurs="1"
+    			name="ReceivingApplicationUniversalIDType" type="string">
     		</element>
-    		<element name="SendingFacilityUniversalID" type="string"
-    			minOccurs="1" maxOccurs="1">
+    		<element maxOccurs="1" minOccurs="1"
+    			name="SendingFacilityUniversalID" type="string">
     		</element>
-    		<element name="SendingFacilityUniversalIDType" type="string"
-    			minOccurs="1" maxOccurs="1">
+    		<element maxOccurs="1" minOccurs="1"
+    			name="SendingFacilityUniversalIDType" type="string">
     		</element>
-    		<element name="ReceivingFacilityUniversalID" type="string"
-    			minOccurs="1" maxOccurs="1">
+    		<element maxOccurs="1" minOccurs="1"
+    			name="ReceivingFacilityUniversalID" type="string">
     		</element>
-    		<element name="DateTimeofMessage" type="dateTime"
-    			minOccurs="1" maxOccurs="1">
+    		<element maxOccurs="1" minOccurs="1"
+    			name="DateTimeofMessage" type="dateTime">
     		</element>
-    		<element name="MessageTypeTriggerEvent" type="string"
-    			minOccurs="1" maxOccurs="1">
+    		<element maxOccurs="1" minOccurs="1"
+    			name="MessageTypeTriggerEvent" type="string">
     		</element>
-    		<element name="MessageTypeMessageCode" type="string"
-    			minOccurs="1" maxOccurs="1">
+    		<element maxOccurs="1" minOccurs="1"
+    			name="MessageTypeMessageCode" type="string">
     		</element>
-    		<element name="SendingFacilityNamespaceID" type="string"
-    			minOccurs="1" maxOccurs="1">
+    		<element maxOccurs="1" minOccurs="1"
+    			name="SendingFacilityNamespaceID" type="string">
     		</element>
-    		<element name="ReceivingFacilityNamespaceID" type="string"
-    			minOccurs="1" maxOccurs="1">
+    		<element maxOccurs="1" minOccurs="1"
+    			name="ReceivingFacilityNamespaceID" type="string">
     		</element>
-    		<element name="MessageHeader" type="string" minOccurs="1"
+    		<element maxOccurs="1" minOccurs="1" name="MessageHeader"
+    			type="string">
+    		</element>
+    		<element maxOccurs="1" minOccurs="1"
+    			name="source_guideline_path" type="string">
+    		</element>
+    		<element maxOccurs="1" minOccurs="1" name="translate_path"
+    			type="string">
+    		</element>
+    		<element maxOccurs="1" minOccurs="1"
+    			name="target_guideline_path" type="string" />
+    		<element name="InfoId" type="string" minOccurs="1"
     			maxOccurs="1">
     		</element>
-    		<element name="source_guideline_path" type="string"
+    		<element name="MessageTypeMessageStructure" type="string"
     			minOccurs="1" maxOccurs="1">
     		</element>
-    		<element name="translate_path" type="string" minOccurs="1"
+    		<element name="SendingApplicationNamespaceID" type="string"
+    			minOccurs="1" maxOccurs="1">
+    		</element>
+    		<element name="ReceivingApplicationNamespaceID"
+    			type="string" minOccurs="1" maxOccurs="1">
+    		</element>
+    		<element name="SendingApplicationUniversalID" type="string"
+    			minOccurs="1" maxOccurs="1">
+    		</element>
+    		<element name="Version" type="string" minOccurs="1"
     			maxOccurs="1">
     		</element>
-    		<element name="target_guideline_path" type="string" minOccurs="1" maxOccurs="1"></element>
+    		<element name="SendingApplicationUniversalIDType" type="string" minOccurs="1" maxOccurs="1"></element>
     	</sequence>
     </complexType>
 
 
     <complexType name="Maps">
     	<sequence>
-    		<element ref="tns:Map" minOccurs="0" maxOccurs="unbounded"></element>
+    		<element maxOccurs="unbounded" minOccurs="0" ref="tns:Map"/>
     	</sequence>
     </complexType>
 
-    <element name="Maps" type="tns:Maps"></element>
+    <element name="Maps" type="tns:Maps"/>
+    <complexType name="MapsArray">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" name="Maps" type="tns:Maps"/>
+    </sequence>
+  </complexType>
+    <element name="MapsArray" type="tns:MapsArray"/>
 </schema>

@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_PnzGAI6mEeivd-zu3wInvA" targetNamespace="http://tns.tibco.com/bw/composite/org.carenet.oasis.rest.oasis_maps.module" name="org.carenet.oasis.rest.oasis_maps.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_PnzGAI6mEeivd-zu3wInvA" targetNamespace="http://tns.tibco.com/bw/composite/org.carenet.oasis.rest.oasis_maps.module" name="org.carenet.oasis.rest.oasis_maps.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_fKTLgI9fEeieL_BUYL_iLQ" name="maps" promote="ComponentgetMapsProcess/maps">
+    <sca:interface.wsdl xmi:id="_fLBkQI9fEeieL_BUYL_iLQ" interface="http://xmlns.example.com/20180724093450PLT#wsdl.interface(maps)" scaext:wsdlLocation="../Processes/org/carenet/oasis/rest/oasis_maps/module/getMapsProcess.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_fLhTgI9fEeieL_BUYL_iLQ" name="RestService" path="/maps" docBasePath="http://localhost:7777/org.carenet.oasis.rest.oasis_maps.module" docResourcePath="Maps" basePath="/" connector="org.carenet.oasis.rest.oasis_maps.module.Maps" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/org.carenet.oasis.rest.oasis_maps.module.getMapsProcess-Maps.json">
+      <operation xmi:id="_fLqdcI9fEeieL_BUYL_iLQ" operationName="get" nickname="get-maps" httpMethod="GET" responseStyle="element" requestStyle="element">
+        <parameters xmi:id="_vInEgI9uEei6y6nkge6D7g">
+          <parameterMapping xmi:id="_vInEgY9uEei6y6nkge6D7g" parameterName="InfoId" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_179AkI9uEei6y6nkge6D7g" parameterName="ReceivingApplicationUniversalID" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_6mW6MI9uEei6y6nkge6D7g" parameterName="ReceivingFacilityUniversalIDType" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_-gB6cI9uEei6y6nkge6D7g" parameterName="ReceivingApplicationUniversalIDType" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_afhR4I90Eei6y6nkge6D7g" parameterName="SendingFacilityUniversalID" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_dN1SQI90Eei6y6nkge6D7g" parameterName="SendingFacilityUniversalIDType" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_gZDREI90Eei6y6nkge6D7g" parameterName="ReceivingFacilityUniversalID" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_jRL70I90Eei6y6nkge6D7g" parameterName="MessageTypeTriggerEvent" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_kpl5MI90Eei6y6nkge6D7g" parameterName="MessageTypeMessageCode" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_pk58oI90Eei6y6nkge6D7g" parameterName="SendingFacilityNamespaceID" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_sTfp0I90Eei6y6nkge6D7g" parameterName="ReceivingFacilityNamespaceID" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_vB6X4I90Eei6y6nkge6D7g" parameterName="MessageHeader" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_0cM7YJDqEeiawpWLxNskSA" parameterName="MessageTypeMessageStructure" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_3ta0gJDqEeiawpWLxNskSA" parameterName="SendingApplicationNamespaceID" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_84GwsJDqEeiawpWLxNskSA" parameterName="ReceivingApplicationNamespaceID" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_AloyYJDrEeiawpWLxNskSA" parameterName="SendingApplicationUniversalID" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_EBOvgJDrEeiawpWLxNskSA" parameterName="Version" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_HamfEJDrEeiawpWLxNskSA" parameterName="SendingApplicationUniversalIDType" parameterType="Query" dataType="string"/>
+        </parameters>
+        <clientFormat>json</clientFormat>
+        <clientFormat>xml</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_fMp78I9fEeieL_BUYL_iLQ"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_fLqdcY9fEeieL_BUYL_iLQ" bindingName="RestService"/>
+  </sca:service>
   <sca:property xmi:id="_QIbt4I6mEeivd-zu3wInvA" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_QIk30I6mEeivd-zu3wInvA" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_QIk30Y6mEeivd-zu3wInvA" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
@@ -9,7 +41,10 @@
   <sca:property xmi:id="_QIuo046mEeivd-zu3wInvA" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_QI4Z0I6mEeivd-zu3wInvA" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_QI4Z0Y6mEeivd-zu3wInvA" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
-  <sca:component xmi:id="_Pw3icI6mEeivd-zu3wInvA" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Pw3icY6mEeivd-zu3wInvA" processName="org.carenet.oasis.rest.oasis_maps.module.Process"/>
+  <sca:component xmi:id="_fJYlgI9fEeieL_BUYL_iLQ" name="ComponentgetMapsProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_fJYlgY9fEeieL_BUYL_iLQ" processName="org.carenet.oasis.rest.oasis_maps.module.getMapsProcess"/>
+    <sca:service xmi:id="_fJ2fkI9fEeieL_BUYL_iLQ" name="maps">
+      <sca:interface.wsdl xmi:id="_fKQvQI9fEeieL_BUYL_iLQ" interface="http://xmlns.example.com/20180724093450PLT#wsdl.interface(maps)" scaext:wsdlLocation="../Processes/org/carenet/oasis/rest/oasis_maps/module/getMapsProcess.bwp"/>
+    </sca:service>
   </sca:component>
 </sca:composite>
