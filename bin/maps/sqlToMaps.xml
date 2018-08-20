@@ -1,0 +1,55 @@
+<Configure>
+  <SourceSet value="" />
+  <SourceGuideline value="C:\Users\jdavis24\local_wksp\org.carenet.oasis.rest.oasis_maps.module\Schemas\SqlDirect.xsd" />
+  <TargetSet value="" />
+  <TargetGuideline value="C:\Users\jdavis24\local_wksp\org.carenet.oasis.rest.oasis_maps.module\Schemas\Maps.xsd" />
+  <EDISIM value="" format="" />
+  <Version value="" />
+  <SOURCEOPTION>
+    <keyOffset value="" />
+    <keylen value="" />
+    <recordterminator value="" />
+    <sourcedoctype value="XML" />
+    <allowDelimiterAsPartOfData value="0" />
+    <allowCRLFAsPartOfData value="0" />
+    <sourcexmlRootNode value="jdbcGeneralActivityOutput" />
+    <sourcexmlxmlnameSpace value="http://www.w3.org/2001/XMLSchema" />
+    <isDoconly value="" />
+    <replacementstring value="" />
+    <sourceFlatFileType value="N" />
+  </SOURCEOPTION>
+  <TARGETOPTION>
+    <segSeparator value="" />
+    <compSeparator value="" />
+    <elmSeparator value="" />
+    <repetionSeparator value="" />
+    <subcomponentseparator value="" />
+    <wrapdata value="0" />
+    <allowValueContainsOnlySpaces value="0" />
+    <UsingSourceSep value="0" />
+    <addnewline value="0" />
+    <uppercase value="0" />
+    <lowercase value="0" />
+    <singleENV value="0" />
+    <targetFlatNoID value="0" />
+    <MappingOffset value="0" />
+    <targetdoctype value="XML" />
+    <xmlRootNode value="MapsArray" />
+    <xmlNameSpace value="http://www.w3.org/2001/XMLSchema" />
+    <isflatdelimited value="0" />
+    <writeSegTag value="0" />
+    <startWithDelimiter value="0" />
+    <endWithDelimiter value="0" />
+    <leftJustifyRTypeFlat value="0" />
+    <flatdelimiter value="" />
+    <flatSubdelimiter value="" />
+    <flatendingdelimiter value="" />
+    <trimSpace value="" />
+    <newline value="0" />
+    <is2pass value="0" />
+    <createTrailers value="0" />
+    <allowTrailingDelimiter value="0" />
+    <targetAllowDelimiterAsPartOfData value="0" />
+  </TARGETOPTION>
+  <KEYMAP />
+</Configure>

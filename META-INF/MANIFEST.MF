@@ -6,7 +6,8 @@ Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: TIBCO Software Inc.
 Export-Package: .,
- db_scripts
+ db_scripts,
+ maps
 TIBCO-BW-JobSharedVariables: META-INF/module.jsv
 TIBCO-BW-ApplicationModule: META-INF/module.bwm
 TIBCO-BW-Version: 6.4.2 V32 2017-11-05
